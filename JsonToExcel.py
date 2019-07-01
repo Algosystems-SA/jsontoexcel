@@ -20,7 +20,7 @@
 #   python jsontoexcel.py myfile.json - will output two files: myfile.csv myfile.xlsx
 #   Whereas : python jsontoexcel.py myfile.json output - will output two files: output.csv output.xlsx
 #
-#   http://www.opensource.org/licenses/gpl-2.0.php
+#   https://opensource.org/licenses/MIT
 #
 # Copyright (c) George Panou panou.g@gmail.com https://github.com/george-panou
 #
