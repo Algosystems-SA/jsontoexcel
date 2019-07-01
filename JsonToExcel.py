@@ -1,7 +1,27 @@
-import json
+# Takes a json file as input and converts it to csv and xlsx files
+#
+# Prerequisites:
+#   - Python Libraries
+#     - xlsxwriter
+#
+#   You can install the libraries using pip:
+#    - pip install XlsxWriter
+#
+# Version 0.1
+#   Takes a json file as input and converts it to csv and xlsx files. It recursivelly explores the json file's
+#   structure and flattens the output in 2 dimensions so that the data can be converted to csv / xlsx format
+#	Script call definition:
+#   python jsontoexcel.py <Path to json> <Path and output files names(optional)>
+#   http://www.opensource.org/licenses/gpl-2.0.php
+#
+# Copyright (c) George Panou panou.g@gmail.com https://github.com/george-panou
+#
+
 import sys
-import xlsxwriter
+import json
 import csv
+import xlsxwriter
+
 
 out = []
 
@@ -12,7 +32,7 @@ elif len(sys.argv) == 2:
     fileDir = str(sys.argv[1])
     outFile = "./converted"
 else:
-    print ("Correct usage is : <./jsontoexcel.py> <Path to json> <Path for output files (optional)>")
+    print ("Correct usage is : python jsontoexcel.py <Path to json> <Path and output files names(optional)>")
     sys.exit()
 
 #flattens a tree object consisted of dictionaries and lists
@@ -103,4 +123,5 @@ for r, row in enumerate(flat):
             worksheet.write_string(r, c, str(col))
 
 workbook.close()
+
 print("Successfully created files:"+outFile +'.xlsx , ' + outFile+".csv" )
