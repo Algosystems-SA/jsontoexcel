@@ -27,3 +27,15 @@ The first argument you specify will be the input json file the second is the bas
   - python jsontoexcel.py myfile.json -v output
   - python jsontoexcel.py -v myfile.json output
   - python jsontoexcel.py myfile.json -v 
+
+# Known Issues
+
+There are no issues so far, please communicate with me if you run into any, so that I can improve the script.
+
+# Getting Help
+
+If you face any issues please create an issue in the github built-in issue tracker
+
+# Contributing
+
+Please contact me if you want to contribute to this project and I will give you further instructions. 
