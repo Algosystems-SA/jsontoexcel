@@ -11,12 +11,12 @@ You can use the -v flag for verbose output
 
 # Installation
 
-Prerequisites:
-    - Python 3
-    - the xlsxwriter Python library
+Prerequisites: 
+ - Python 3
+ - the xlsxwriter Python library
 
-  You can install the library using pip:
-    - pip install XlsxWriter
+You can install the library using pip:
+ - pip install XlsxWriter
   
 # Usage
 
