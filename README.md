@@ -1,4 +1,5 @@
 # jsontoexcel
+
 Converts a json file to csv and excel format.
 
 It recursivelly explores the json file and flattens its data to output so it can be viewed as excel/csv
@@ -8,9 +9,17 @@ It creates labels which correspond to the keys of the items parsed
 It concatenates the full path tree json of each object to the label's name structure  and flattens the output in 2 dimensions so that the data can be converted to csv / xlsx format
 You can use the -v flag for verbose output
 
+# Installation
 
+Prerequisites:
+    - Python 3
+    - the xlsxwriter Python library
+
+  You can install the library using pip:
+    - pip install XlsxWriter
   
 # Usage
+
 Script call definition:
 python jsontoexcel.py <Path to json> <Path and output files names(optional)>
   
