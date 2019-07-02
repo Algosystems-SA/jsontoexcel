@@ -12,7 +12,7 @@ Script call definition:
 python jsontoexcel.py <Path to json> <Path and output files names(optional)>
   
 # Usage
-The first argument to specify will be the input json file the second is the base name used for the creation of the excel and csv file. If the second argument is not specified the json file's name will be used.
+The first argument you specify will be the input json file the second is the base name used for the creation of the excel and csv file. If the second argument is not specified the json file's name will be used.
   
   This will output two files named: myfile.csv myfile.xlsx
   - python jsontoexcel.py myfile.json 
