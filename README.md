@@ -18,7 +18,7 @@ The first argument you specify will be the input json file the second is the bas
   - python jsontoexcel.py myfile.json 
   
   Whereas this will output two files named: output.csv output.xlsx
-  - python jsontoexcel.py myfile.json output - 
+  - python jsontoexcel.py myfile.json output  
   
   you can place the -v argument anywhere eg:
   
