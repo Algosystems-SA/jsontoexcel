@@ -3,15 +3,17 @@ Converts a json file to csv and excel format.
 
 It recursivelly explores the json file and flattens its data to output so it can be viewed as excel/csv
 
-Takes a json file as input and converts it to csv and xlsx files. It recursivelly explores the json file's
+Takes a json file as input and converts it to csv and xlsx files. It recursivelly explores the json file's data (nodes)
 It creates labels which correspond to the keys of the items parsed
-It concatenates the full path tree json of each object to the label's name
-structure and flattens the output in 2 dimensions so that the data can be converted to csv / xlsx format
-you can use the -v flag for verbose output
+It concatenates the full path tree json of each object to the label's name structure  and flattens the output in 2 dimensions so that the data can be converted to csv / xlsx format
+You can use the -v flag for verbose output
+
+
+  
+# Usage
 Script call definition:
 python jsontoexcel.py <Path to json> <Path and output files names(optional)>
   
-# Usage
 The first argument you specify will be the input json file the second is the base name used for the creation of the excel and csv file. If the second argument is not specified the json file's name will be used.
   
   This will output two files named: myfile.csv myfile.xlsx
