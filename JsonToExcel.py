@@ -96,15 +96,27 @@ def flatten_json(y):
     count = 0
 
 #flatten each row of the root list
-    for j in y :
-        #print(j)
-        out,lbl,cnt=flatten(j,' ')
-        if verbose:
-            print("Sub tree:" + str(out))
-        depth.append(cnt)
-        labels.append(lbl)
-        #print(out)
-        list2.append(out)
+    if type(y) is dict:
+        for j in y.values() :
+            #print(j)
+            out,lbl,cnt=flatten(j,' ')
+            if verbose:
+                print("Sub tree:" + str(out))
+            depth.append(cnt)
+            labels.append(lbl)
+            #print(out)
+            list2.append(out)
+
+    elif isinstance(y, list):
+        for j in y :
+            #print(j)
+            out,lbl,cnt=flatten(j,' ')
+            if verbose:
+                print("Sub tree:" + str(out))
+            depth.append(cnt)
+            labels.append(lbl)
+            #print(out)
+            list2.append(out)
     label=[]
 
     #find max path in json tree
@@ -149,7 +161,7 @@ print("Loading json file")
 with open(fileDir,encoding = 'utf-8', newline='') as file:
     data = file.read().replace('\n', '')
 all_data = json.loads(data)
-
+print(all_data)
 global count
 
 #flatten data
