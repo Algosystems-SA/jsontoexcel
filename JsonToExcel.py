@@ -153,7 +153,7 @@ all_data = json.loads(data)
 global count
 
 #flatten data
-flat = flatten_json(all_data['data'])
+flat = flatten_json(all_data)
 
 #create csv with flattened data
 print("Saving data as "+outFile+".csv")
