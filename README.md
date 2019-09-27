@@ -24,23 +24,23 @@ You can install the library using pip:
 
 Script call definition:
 
-`python jsontoexcel.py <Path to json> <Path and output files names(optional)>`
+`python JsonToExcel.py <Path to json> <Path and output files names(optional)>`
   
 The first argument you specify will be the input json file. The second is the base name used for the creation of the excel and csv file. If the second argument is not specified, the json file's name will be used.
   
 This will output two files named: myfile.csv myfile.xlsx
 
-- `python jsontoexcel.py myfile.json` 
+- `python JsonToExcel.py myfile.json` 
   
 Whereas this will output two files named: output.csv output.xlsx
 
-- `python jsontoexcel.py myfile.json output`  
+- `python JsonToExcel.py myfile.json output`  
   
 You can place the -v argument anywhere. e.g.:
   
-- `python jsontoexcel.py myfile.json -v output`
-- `python jsontoexcel.py -v myfile.json output`
-- `python jsontoexcel.py myfile.json -v` 
+- `python JsonToExcel.py myfile.json -v output`
+- `python JsonToExcel.py -v myfile.json output`
+- `python JsonToExcel.py myfile.json -v` 
 
 # Known Issues
 
